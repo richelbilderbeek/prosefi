@@ -1,0 +1,21 @@
+Package: prosefi
+Title: Protein Sentence Finder
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Richèl J.C.", "Bilderbeek", email = "richel@richelbilderbeek.nl", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1107-7049")))
+Maintainer: Richèl J.C. Bilderbeek <richel@richelbilderbeek.nl>
+Description: Proteins consist out of amino acids.
+    Each of the twenty amino acids has an uppercase one-character
+    shorthand name.
+    This package searches for protein sequences that consist out of
+    sentences.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports:
+    pureseqtmr,
+    qdapDictionaries
+Suggests: 
+    testthat
