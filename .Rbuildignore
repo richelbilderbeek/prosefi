@@ -1,1 +1,5 @@
 ^\.travis\.yml$
+^.*\.Rproj$
+^\.Rproj\.user$
+^LICENSE$
+^scripts/$
