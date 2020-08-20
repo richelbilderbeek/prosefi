@@ -39,7 +39,9 @@ find_tmh_binder <- function(
 
   while (1) {
     aa <- paste0(sample(all_words, size = 10, replace = FALSE), collapse = "")
-    if (!pureseqtmr::is_tmh(aa)) next()
+    if (!pureseqtmr::is_tmh(aa)) {
+      next()
+    }
 
     t <- bbbq::predict_counts(
       peptide = aa,
