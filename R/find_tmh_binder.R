@@ -1,9 +1,11 @@
 #' Find a TMH sentence that has at least one binder
+#' @inheritParams default_params_doc
 #' @export
 find_tmh_binder <- function(
   haplotype,
   peptide_length,
-  percentile
+  percentile,
+  ic50_prediction_tool
 ) {
 
   aa_verbs <- stringr::str_subset(
@@ -43,7 +45,8 @@ find_tmh_binder <- function(
       peptide = aa,
       haplotype = haplotype,
       peptide_length = peptide_length,
-      percentile = percentile
+      percentile = percentile,
+      ic50_prediction_tool = ic50_prediction_tool
     )
     if (t$n_binders_tmh > 0) {
       return(aa)

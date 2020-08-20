@@ -7,6 +7,14 @@ r_github_packages:
   - jimhester/covr
   - jimhester/lintr
   - MangoTheCat/goodpractice
+  - richelbilderbeek/mhcnuggetsr
+  - richelbilderbeek/mhcnpreds
+  - richelbilderbeek/pureseqtmr
+  - richelbilderbeek/epitope-prediction
+  - richelbilderbeek/epiprepreds
+  - richelbilderbeek/netmhc2pan
+  - richelbilderbeek/nmhc2ppreds
+  - richelbilderbeek/bbbq
 
 before_script:
   - Rscript -e 'remotes::install_github("richelbilderbeek/pureseqtmr")'

@@ -4,7 +4,10 @@
 \alias{find_tmh_binder}
 \title{Find a TMH sentence that has at least one binder}
 \usage{
-find_tmh_binder(haplotype, peptide_length, percentile)
+find_tmh_binder(haplotype, peptide_length, percentile, ic50_prediction_tool)
+}
+\arguments{
+\item{peptide_length}{length of a peptide, in number of amino acids}
 }
 \description{
 Find a TMH sentence that has at least one binder
