@@ -9,7 +9,7 @@ r_github_packages:
   - MangoTheCat/goodpractice
 
 before_script:
-  - Rscript -e 'remotes::install_github("pureseqtmr")'
+  - Rscript -e 'remotes::install_github("richelbilderbeek/pureseqtmr")'
   - Rscript -e 'pureseqtmr::install_pureseqtm()'
 
 after_success:
