@@ -35,7 +35,7 @@ test_that("MHC-II", {
     haplotype = haplotype,
     peptide_length = peptide_length,
     percentile = percentile,
-    ic50_prediction_tool = "netmhc2pan"
+    ic50_prediction_tool = "mhcnuggetsr"
   )
   s
   t <- bbbq::predict_counts(
@@ -43,7 +43,7 @@ test_that("MHC-II", {
     haplotype = haplotype,
     peptide_length = peptide_length,
     percentile = percentile,
-    ic50_prediction_tool = "EpitopePrediction"
+    ic50_prediction_tool = "mhcnuggetsr"
   )
   expect_true(t$n_binders_tmh > 0)
 })
