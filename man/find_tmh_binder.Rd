@@ -7,7 +7,14 @@
 find_tmh_binder(haplotype, peptide_length, percentile, ic50_prediction_tool)
 }
 \arguments{
-\item{peptide_length}{length of a peptide, in number of amino acids}
+\item{haplotype}{the MHC haplotype name}
+
+\item{peptide_length}{length of the peptide}
+
+\item{percentile}{percentile lowest IC50s to classify an IC50
+as a binder}
+
+\item{ic50_prediction_tool}{the IC50 prediction tool}
 }
 \description{
 Find a TMH sentence that has at least one binder

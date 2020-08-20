@@ -5,56 +5,17 @@
 \title{This function does nothing. It is intended to inherit the documentation
 of the parameters from.}
 \usage{
-default_params_doc(
-  ba_models,
-  folder_name,
-  mhc,
-  mhcs,
-  mhc_class,
-  mhcnuggets_options,
-  mhcnuggets_url,
-  n_aas,
-  peptide,
-  peptides,
-  peptide_length,
-  peptides_path,
-  protein_sequence,
-  verbose
-)
+default_params_doc(haplotype, ic50_prediction_tool, peptide_length, percentile)
 }
 \arguments{
-\item{ba_models}{Set to TRUE to use a pure BA model}
+\item{haplotype}{the MHC haplotype name}
 
-\item{folder_name}{superfolder of MHCnuggets.
-The name of the superfolder is \code{/home/[user_name]/.local/share}
-by default, as can be obtained by\link{get_default_mhcnuggets_folder}}
+\item{ic50_prediction_tool}{the IC50 prediction tool}
 
-\item{mhc}{the MHC haplotype name}
+\item{peptide_length}{length of the peptide}
 
-\item{mhcs}{the MHC haplotype names}
-
-\item{mhc_class}{MHC class. Must be \code{I}, \code{II}
-or \link{NA}. Use \link{NA} to let the class be deduced automatically}
-
-\item{mhcnuggets_options}{options to run MHCnuggets with,
-as can be created by \link{create_mhcnuggets_options}.}
-
-\item{mhcnuggets_url}{URL to the MHCnuggets GitHub repository}
-
-\item{n_aas}{number of amino acids}
-
-\item{peptide}{one peptide sequence}
-
-\item{peptides}{one of more peptide sequences}
-
-\item{peptide_length}{length of a peptide, in number of amino acids}
-
-\item{peptides_path}{the path to the peptides}
-
-\item{protein_sequence}{protein sequence, in uppercase,
-for example \code{FAMILYVW}}
-
-\item{verbose}{set to \link{TRUE} for more debug information}
+\item{percentile}{percentile lowest IC50s to classify an IC50
+as a binder}
 }
 \description{
 This function does nothing. It is intended to inherit the documentation

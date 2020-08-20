@@ -1,4 +1,7 @@
 test_that("MHC-I", {
+
+  if (Sys.getenv("TRAVIS") == "") return()
+
   haplotype <- "HLA-A*01:01"
   peptide_length <- 9
   percentile <- 0.02
@@ -22,6 +25,9 @@ test_that("MHC-I", {
 })
 
 test_that("MHC-II", {
+
+  if (Sys.getenv("TRAVIS") == "") return()
+
   haplotype <- "HLA-DRB1*0101"
   peptide_length <- 13
   percentile <- 0.02
