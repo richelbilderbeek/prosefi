@@ -29,8 +29,12 @@ after_success:
   - # No local files created
   - # if [[ $(egrep -R "\"~" --include={*.R,*.Rmd} | egrep -v README.Rmd) ]]; then echo "Local file created"; exit 1; fi;
   - Rscript -e 'pureseqtmr::pureseqtmr_report()'
+  # Download thesis
+  - Rscript -e 'download.file("https://www.rug.nl/research/portal/files/132028374/Complete_thesis.pdf", tempfile())'
 
 after_failure:
   - ls
   - Rscript -e 'pureseqtmr::pureseqtmr_report()'
+  # Download thesis
+  - Rscript -e 'download.file("https://www.rug.nl/research/portal/files/132028374/Complete_thesis.pdf", tempfile())'
 
