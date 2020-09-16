@@ -13,7 +13,7 @@ test_that("MHC-I", {
   )
   s
   t <- bbbq::predict_counts(
-    peptide = s,
+    protein_sequence = s,
     haplotype = haplotype,
     peptide_length = peptide_length,
     percentile = percentile,
@@ -39,7 +39,7 @@ test_that("MHC-II", {
   )
   s
   t <- bbbq::predict_counts(
-    peptide = s,
+    protein_sequence = s,
     haplotype = haplotype,
     peptide_length = peptide_length,
     percentile = percentile,
