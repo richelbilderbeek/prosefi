@@ -6,7 +6,6 @@ r_github_packages:
   - jimhester/covr
   - jimhester/lintr
   - MangoTheCat/goodpractice
-  - richelbilderbeek/mhcnuggetsr
   - richelbilderbeek/mhcnpreds
   - richelbilderbeek/pureseqtmr
   - richelbilderbeek/epitope-prediction
