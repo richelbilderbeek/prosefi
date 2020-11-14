@@ -2,6 +2,10 @@ language: r
 cache: packages
 os: linux
 
+r_packages:
+  - devtools
+  - rgl
+
 r_github_packages:
   - jimhester/covr
   - jimhester/lintr
@@ -17,6 +21,19 @@ r_github_packages:
 
 bioc_packages:
   - msa
+  - bios2mds
+
+before_install:
+  # Rmpfr
+  - sudo apt install -qq libmpfr-dev
+  # ImageMagick
+  #- sudo add-apt-repository -y ppa:opencpu/imagemagick
+  #- sudo apt-get update
+  - sudo apt-get install -y libmagick++-dev
+  # Fix rJava error, from https://travis-ci.community/t/cannot-connect-to-java-from-r/9754/8
+  #- sudo $(which R) CMD javareconf
+  # bios2mds
+  - sudo apt-get install libglu1-mesa-dev
 
 before_script:
   - Rscript -e 'remotes::install_github("richelbilderbeek/pureseqtmr")'
