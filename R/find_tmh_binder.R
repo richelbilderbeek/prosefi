@@ -42,7 +42,7 @@ find_tmh_binder <- function(
     if (!pureseqtmr::is_tmh(aa)) next
 
     t <- bbbq::predict_counts(
-      peptide = aa,
+      protein_sequence = aa,
       haplotype = haplotype,
       peptide_length = peptide_length,
       percentile = percentile,
